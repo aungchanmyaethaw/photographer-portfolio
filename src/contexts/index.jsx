@@ -11,7 +11,10 @@ export function AppProvider({ children }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isFormModalOpen, setIsFormModalOpen] = useState(false);
   const [currentLink, setCurrentLink] = useState(0);
-  const [currentGalleryPage, setCurrentGalleryPage] = useState(1);
+  const [currentGalleryPage, setCurrentGalleryPage] = useStorage(
+    1,
+    "current.gallerypage"
+  );
   const [query, setQuery] = useStorage("", "search.query");
   const [url, setUrl] = useStorage(
     `/v1/curated?page=1&per_page=12`,
