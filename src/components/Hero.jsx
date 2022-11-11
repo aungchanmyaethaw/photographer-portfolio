@@ -1,4 +1,5 @@
 import hero from "../assets/hero-image.jpg";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <section className="flex flex-col lg:flex-row justify-between items-center min-h-screen py-20 md:pb-16 lg:py-0">
@@ -17,10 +18,12 @@ const Hero = () => {
           Photographer
         </h1>
         <p className="text-light font-paragraph w-full  lg:w-2/3 mb-6 lg:ms-0 text-sm lg:text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-          dolores voluptate vel tempora, fugiat quasi dicta incidunt eveniet.
+          I'm a freelance photographer based in U.S working for Events, Fashion
+          and Travels.
         </p>
-        <button className="my-btn">About me</button>
+        <Link to="/about">
+          <button className="my-btn">About me</button>
+        </Link>
       </div>
     </section>
   );

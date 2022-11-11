@@ -9,7 +9,7 @@ import {
 } from "../components";
 import { useAppContext } from "../contexts";
 import { Modal } from "../components";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const getFirstName = () => {
   const profile = JSON.parse(localStorage.getItem("form.data"));
@@ -33,7 +33,11 @@ const Contact = () => {
   }
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <AnimatePresence
         initial={false}
         exitBeforeEnter={true}
@@ -49,8 +53,8 @@ const Contact = () => {
           Contact Me
         </h1>
         <p className="text-light font-paragraph w-full  lg:w-2/3 mb-16 lg:ms-0 text-sm lg:text-base ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-          dolores voluptate vel tempora, fugiat quasi dicta incidunt eveniet.
+          Let's get the conversation started.Tell us a bit of yourself, and I'll
+          get in touch as soon as I can.
         </p>
         <Form handleSubmit={handleSubmit} />
       </div>
@@ -59,7 +63,7 @@ const Contact = () => {
       <RightSidebar />
       <Overlay isOpen={isSidebarOpen} />
       <Footer />
-    </>
+    </motion.div>
   );
 };
 

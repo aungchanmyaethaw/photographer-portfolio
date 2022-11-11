@@ -71,47 +71,46 @@ export const people = [
     image: "../src/assets/person-1.png",
     name: "maria ferguson",
     content:
-      "Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.",
+      "Tom is extremely friendly and easy to work with. Tom has an amazing talent for photography and is able to capture an object or person in a unique way. Would highly recommend.",
   },
   {
     id: 2,
     image: "../src/assets/person-2.png",
     name: "john doe",
     content:
-      "Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.",
+      "Tom is just a fantastic guy and a great photographer. Highly recommend his services for any special occasion you might have.",
   },
   {
     id: 3,
     image: "../src/assets/person-3.png",
     name: "susan andersen",
     content:
-      "Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ",
+      "Tom did amazing at capturing photos for my car, he was the perfect mix of being professional as well as quite funny which made for a great shoot!",
   },
   {
     id: 4,
     image: "../src/assets/person-4.png",
     name: "peter smith",
-    content:
-      "Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.",
+    content: "Amazing photos, great communication and professional work ethic!",
   },
 ];
 
 export const categories = [
   {
     id: 1,
-    text: "All",
+    text: "all",
   },
   {
     id: 2,
-    text: "Wedding",
+    text: "wedding",
   },
   {
     id: 3,
-    text: "Nature",
+    text: "nature",
   },
   {
     id: 4,
-    text: "Halloween",
+    text: "halloween",
   },
 ];
 

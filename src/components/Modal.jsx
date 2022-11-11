@@ -1,5 +1,6 @@
+import { Overlay } from "../components";
+import { FaThumbsUp } from "react-icons/fa";
 import { motion } from "framer-motion";
-import Overlay from "./Overlay";
 import { useAppContext } from "../contexts";
 const dropIn = {
   hidden: {
@@ -34,6 +35,9 @@ const Modal = ({ firstName }) => {
         exit="exit"
         className="modal"
       >
+        <div className="w-[4rem] h-[4rem] grid place-items-center bg-primary rounded-full my-4">
+          <FaThumbsUp className="text-light text-3xl" />
+        </div>
         <h4 className="text-secondary text-[1.75rem] font-heading mb-4">
           Thank You! {firstName}
         </h4>

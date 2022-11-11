@@ -20,7 +20,7 @@ const LeftSidebar = () => {
 
         <div className="mb-4">
           <h5 className="text-heading text-primary text-[1.3125rem] font-bold">
-            Thomas Brook's
+            Thomas Brook
             <br /> <span className="text-secondary">Photography</span>
           </h5>
         </div>

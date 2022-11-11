@@ -9,6 +9,14 @@ import Modal from "./Modal";
 import AboutContent from "./AboutContent";
 import ReviewCarousel from "./ReviewCarousel";
 import SearchForm from "./SearchForm";
+import PexelsAPI from "./PexelsAPI";
+import Photos from "./Photos";
+import Categories from "./Categories";
+import GalleryBtnsGroup from "./GalleryBtnsGroup";
+import Loader from "./Loader";
+import Photo from "./Photo";
+import Error from "./Error";
+import InputWithLabel from "./InputWithLabel";
 export {
   Hero,
   RightSidebar,
@@ -21,4 +29,12 @@ export {
   AboutContent,
   ReviewCarousel,
   SearchForm,
+  PexelsAPI,
+  Photos,
+  Photo,
+  Categories,
+  GalleryBtnsGroup,
+  Loader,
+  Error,
+  InputWithLabel,
 };

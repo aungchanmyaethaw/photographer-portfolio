@@ -171,15 +171,14 @@ body {
 
 .overlay {
   display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0.9)
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
   );
   z-index: 100;
   cursor: pointer;
@@ -280,4 +279,39 @@ body {
     height: 2.25rem;
     font-size: 1.75rem;
   }
+}
+
+/* gallery */
+
+.gallery-photo .photo-overlay {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-photo img {
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-photo:hover .photo-overlay {
+  opacity: 1;
+}
+
+.gallery-photo:hover .photo-overlay svg {
+  transform: scale(1);
+}
+
+.gallery-photo:hover img {
+  transform: scale(1.1);
 }

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { About, Contact, Gallery, Home, SingleImage, Error } from "./pages";
+import { About, Contact, Gallery, Home, SinglePhoto, Error } from "./pages";
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/gallery" element={<Gallery />} />
-            <Route path="/singleimage/:id" element={<SingleImage />} />
+            <Route path="/photo/:id" element={<SinglePhoto />} />
             <Route path="/*" element={<Error />} />
           </Routes>
         </Router>
