@@ -21,7 +21,7 @@ const Photos = ({ photos }) => {
         const currentPhoto = index + 1;
 
         return (
-          <Link to={`/photo/${photo.id}`} key={photo.id} target="_blank">
+          <Link to={`/photo/${photo.id}`} key={photo.id}>
             <div className="mb-4 overflow-hidden rounded-lg  border-2 border-light relative cursor-pointer gallery-photo ">
               <img
                 alt={photo.alt}
