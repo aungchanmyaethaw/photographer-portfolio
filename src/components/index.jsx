@@ -17,6 +17,7 @@ import Loader from "./Loader";
 import Photo from "./Photo";
 import Error from "./Error";
 import InputWithLabel from "./InputWithLabel";
+import ScrollToTop from "./ScrollToTop";
 export {
   Hero,
   RightSidebar,
@@ -37,4 +38,5 @@ export {
   Loader,
   Error,
   InputWithLabel,
+  ScrollToTop,
 };

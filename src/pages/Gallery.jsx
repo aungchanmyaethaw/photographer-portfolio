@@ -48,7 +48,7 @@ const Gallery = () => {
   }, [url]);
 
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -73,7 +73,7 @@ const Gallery = () => {
       <RightSidebar />
       <Overlay isOpen={isSidebarOpen} />
       <Footer />
-    </motion.div>
+    </motion.section>
   );
 };
 

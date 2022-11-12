@@ -33,7 +33,7 @@ const Contact = () => {
   }
 
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -63,7 +63,7 @@ const Contact = () => {
       <RightSidebar />
       <Overlay isOpen={isSidebarOpen} />
       <Footer />
-    </motion.div>
+    </motion.section>
   );
 };
 
