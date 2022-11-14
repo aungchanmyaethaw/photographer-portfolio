@@ -68,28 +68,28 @@ export const aboutContent = [
 export const people = [
   {
     id: 1,
-    image: "/assets/person-1.png",
+    image: "../src/assets/person-1.png",
     name: "maria ferguson",
     content:
       "Tom is extremely friendly and easy to work with. Tom has an amazing talent for photography and is able to capture an object or person in a unique way. Would highly recommend.",
   },
   {
     id: 2,
-    image: "/assets/person-2.png",
+    image: "../src/assets/person-2.png",
     name: "john doe",
     content:
       "Tom is just a fantastic guy and a great photographer. Highly recommend his services for any special occasion you might have.",
   },
   {
     id: 3,
-    image: "/assets/person-3.png",
+    image: "../src/assets/person-3.png",
     name: "susan andersen",
     content:
       "Tom did amazing at capturing photos for my car, he was the perfect mix of being professional as well as quite funny which made for a great shoot!",
   },
   {
     id: 4,
-    image: "/assets/person-4.png",
+    image: "../src/assets/person-4.png",
     name: "peter smith",
     content: "Amazing photos, great communication and professional work ethic!",
   },
